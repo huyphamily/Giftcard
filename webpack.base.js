@@ -21,7 +21,9 @@ module.exports = {
   },
   devServer: {
     contentBase: './client',
-    hot: true
+    proxy: {
+      '*': 'http://localhost:3000'
+    }
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
