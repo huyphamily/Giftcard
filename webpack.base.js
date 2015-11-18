@@ -9,6 +9,9 @@ module.exports = {
       test: /\.jsx$/,
       exclude: /node_modules/,
       loader: 'react-hot!babel'
+    }, {
+      test: /\.scss$|\.css$/,
+      loader: 'style!css!sass'
     }]
   },
   resolve: {
@@ -22,7 +25,7 @@ module.exports = {
   devServer: {
     contentBase: './client',
     proxy: {
-      '*': 'http://localhost:3000'
+      '/api*': 'http://localhost:3000'
     }
   },
   plugins: [
