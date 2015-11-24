@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GiftPage from './components/GiftPage';
+import App from './components/App';
 import 'material-design-lite/material.min.css';
 import 'material-design-lite/material.min.js';
 
 ReactDOM.render(
-  <GiftPage />,
+  <App />,
   document.getElementById('app')
 );

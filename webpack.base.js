@@ -25,7 +25,8 @@ module.exports = {
   devServer: {
     contentBase: './client',
     proxy: {
-      '/api*': 'http://localhost:3000'
+      '/api*': 'http://localhost:3000',
+      '/images*': 'http://localhost:3000'
     }
   },
   plugins: [
