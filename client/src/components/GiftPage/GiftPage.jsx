@@ -1,10 +1,11 @@
 import React from 'react';
 import GiftCard from '../GiftCard/GiftCard';
+import { Link } from 'react-router'
 import './giftpage.scss';
 
 export default class GiftPage extends React.Component {
   render() {
-    let giftCards = [1,2,3].map(() => {
+    let giftCards = [1,2,3,4,5,6].map(() => {
       return (
         <div className="mdl-cell mdl-cell--4-col">
           <GiftCard />
@@ -23,6 +24,7 @@ export default class GiftPage extends React.Component {
             </div>
           </div>
         </div>
+        <Link to="/recipient" >Link</Link>
       </div>
     )
   }
