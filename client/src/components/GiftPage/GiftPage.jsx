@@ -8,7 +8,7 @@ export default class GiftPage extends React.Component {
     let giftCards = [1,2,3,4,5,6].map(() => {
       return (
         <div className="mdl-cell mdl-cell--4-col">
-          <GiftCard />
+          <Link to="/recipient" ><GiftCard /></Link>
         </div>
       )
     });
@@ -24,7 +24,6 @@ export default class GiftPage extends React.Component {
             </div>
           </div>
         </div>
-        <Link to="/recipient" >Link</Link>
       </div>
     )
   }
