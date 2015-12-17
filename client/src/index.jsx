@@ -5,8 +5,7 @@ import App from './components/App';
 import GiftPage from './components/GiftPage/GiftPage';
 import Recipient from './components/Recipient/Recipient';
 
-import 'material-design-lite/material.min.css';
-import 'material-design-lite/material.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render((
   <Router>

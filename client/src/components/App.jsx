@@ -1,21 +1,25 @@
 import React from 'react';
+import { Navbar, Grid, Row, Col } from 'react-bootstrap';
 import './app.scss';
+
+const navbarInstance = (
+  <Navbar inverse staticTop>
+    <Navbar.Header>
+      <Navbar.Brand>
+        <a href="#">Gift Card Company</a>
+      </Navbar.Brand>
+    </Navbar.Header>
+  </Navbar>
+);
 
 export default class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-          <header className="mdl-layout__header">
-            <div className="mdl-layout__header-row">
-              <span className="mdl-layout-title">Gift Card Company</span>
-            </div>
-          </header>
-          <main className="mdl-layout__content">
-            {this.props.children}
-          </main>
-        </div>
+        {navbarInstance}
+        <div>{this.props.children}</div>
       </div>
     )
   }
 }
+
