@@ -6,6 +6,7 @@ export default class RecipientPage extends React.Component {
   render() {
     return (
       <Grid>
+        <h3 className="text-center bottom40">Enter Recipient Information</h3>
         <Row>
           <Col sm={8} smOffset={2}>
             <form>
@@ -20,9 +21,8 @@ export default class RecipientPage extends React.Component {
                 placeholder="Write a personal message"
               />
               <ButtonInput
-                type="submit"
                 value="Next"
-                className="pull-right"
+                className="custom-bottom-button"
               />
             </form>
           </Col>

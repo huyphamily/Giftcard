@@ -6,17 +6,21 @@ import './giftpage.scss';
 
 export default class GiftPage extends React.Component {
   render() {
-    let giftCards = [1,2,3,4,5,6].map(() => {
+    let giftCards = [1,2,3,4,5,6].map((value) => {
       return (
-        <Col sm={4}>
-          <Link to="/recipient" ><GiftCard /></Link>
+        <Col sm={4} key={value} className="gift-card-container">
+          <GiftCard
+            merchantImage="/images/sample_card.png"
+            merchantMax={100}
+            merchantMin={10}
+          />
         </Col>
       )
     });
 
     return (
       <div>
-        <h3 className="text-center">Choose A Gift Card</h3>
+        <h3 className="text-center bottom40">Choose A Gift Card</h3>
         <Grid>
           <Row>
             <Col sm={10} smOffset={1}>
